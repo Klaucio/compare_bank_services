@@ -1,0 +1,20 @@
+.SideDrawer{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 65%;
+    z-index: 200px;    
+}
+.Open{
+    transform: translateX(0);
+}
+.Close{
+    transform: translateX(-100%);
+}
+
+@media(min-width:  500px){
+    .SideDrawer{
+        display: none;
+    }
+}

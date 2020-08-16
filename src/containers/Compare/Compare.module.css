@@ -1,0 +1,36 @@
+.Compare {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.Categories{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 200px;
+    max-height: 500px;
+    box-shadow: 0px 1px 1px darkgrey;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.CatHeader{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 48px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}

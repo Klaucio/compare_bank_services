@@ -1,0 +1,5 @@
+.Logo{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}

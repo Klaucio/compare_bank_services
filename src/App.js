@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Layout from './hoc/Layout/Layout'
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
+import Home from './containers/Home/Home';
+import Compare from './containers/Compare/Compare';
+
 import './App.css';
 
 function App() {
+
+  let routes = (
+    <Switch>
+      <Route path="/contacte-nos" component={  Home} />
+      <Route path="/sobre-nos" component={ Home } />
+      <Route path="/compare" component={ Compare} />
+      <Route path="/" exact component= { Home } />
+      <Redirect to="/" />
+    </Switch>
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      {routes}
+    </Layout>
   );
 }
 
