@@ -7,15 +7,25 @@ const initialState = {
 }
 
 const fetchServicesStart = (state, action) => {
+    return {
+        ...state,
+        loading:true
+    }
     
 } 
 
 const fetchServicesSuccess = (state, action) => {
-    
+    return {
+        services:action.services,
+        loading:false
+    }
 }
 
 const fetchServicesFail = (state, action) => {
-    
+    return {
+        ...state,
+        loading:false
+    }
 }
 
 
