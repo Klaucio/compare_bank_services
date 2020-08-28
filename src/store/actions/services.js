@@ -22,7 +22,7 @@ export const fetchServicesStart = () => {
 
 }
 
-export const fetchServices = () => {
+export const onFetchServices = () => {
     return dispatch => {
         dispatch(fetchServicesStart());
         axios.get( 'api/serviceData' )

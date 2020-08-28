@@ -1,5 +1,5 @@
 export {
-    fetchServices
+    onFetchServices
  } from './services';
 
 export {

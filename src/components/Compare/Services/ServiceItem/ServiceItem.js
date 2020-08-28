@@ -5,7 +5,6 @@ import classes from './ServiceItem.module.css';
 const ServiceItem = props => {
 
     return (
-        // <div>
             <label className={classes.ServiceItem}>
                 <input
                     type='checkbox'
@@ -18,7 +17,6 @@ const ServiceItem = props => {
                 <span className={classes.Checkmark}>
                 </span>
             </label>
-        // </div>
     )
 }
 
